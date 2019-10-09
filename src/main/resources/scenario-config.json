@@ -1,0 +1,28 @@
+{
+  "actions": [
+    {
+      "name": "openURL",
+      "parameters": ["https://google.com"]
+    },
+    {
+      "name": "Click",
+      "parameters": [".//*[@name='q']"]
+    },
+    {
+      "name": "setValue",
+      "parameters": [".//*[@name='q']" , "Netcracker"]
+    },
+    {
+      "name": "Click",
+      "parameters": [".//*[@name='btnK']"]
+    },
+    {
+      "name": "Click",
+      "parameters": [".//*[@id='rso']/div/div/div/div/div/div/a"]
+    },
+    {
+      "name": "Screenshot",
+      "parameters": []
+    }
+  ]
+}

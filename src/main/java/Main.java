@@ -42,7 +42,6 @@ public class Main{
                         break;
                     }
                     case "setValue":{
-                        WebDriverWait wait = new WebDriverWait(driver, 10);
                         WebElement elem = driver.findElement(By.xpath(params.get(0)));
                         elem.sendKeys(params.get(1));
                         break;
@@ -52,6 +51,12 @@ public class Main{
                         FileUtils.copyFile(screenshot, new File(FilenameUtils.getFullPath(fileName)+"screenshot.png"));
                         break;
                     }
+                    case "checkElementVisible":{
+                        boolean isVisible = !driver.findElements(By.xpath(params.get(0))).isEmpty();
+                        System.out.print(isVisible);
+                        break;
+                    }
+
                     default:{
                         break;
                     }
